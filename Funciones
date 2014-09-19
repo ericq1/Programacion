@@ -1,0 +1,92 @@
+import datetime
+actual = datetime.date.today()
+
+cfecha = input("Cual es tu fecha de nacimiento? (formato dd/mm/aaaa): ")
+numero = input("Ingrese un numero para elevarlo al cuadrado: ")
+peso = input("Ingrese el peso para calcular el indice de masa corporal: ")
+estatura = input("Ingrese la estatura para calcular el indice de masa corporal: ")
+radio = input("Ingrese el radio para calcular el Area de un circulo: ")
+num2 = input("Ingrese un numero: ")
+num3 = input("Ingrese un numero: ")
+nums = input("Ingrese un numero: ")
+
+def esc_num():
+	l=int(numero)
+	num=l**2
+	print("El cuadrado de ", numero, "es:", num)
+	return
+
+def fecha():
+		hoy=int(actual.year)
+		dfecha = datetime.datetime.strptime(cfecha, "%d/%m/%Y")
+		mi=int(dfecha.year)
+		final=hoy-mi
+		print ("Tienes: ",final, "años de edad")
+		return 
+
+def imc():
+	p=float(peso)
+	e=float(estatura)
+	imc= p/e**2
+	print("El imc es", imc)
+	return
+
+def area():
+	pi=3.1416
+	r=int(radio)
+	area=pi*r**2
+	print("El area del circulo es: ",area)
+	return 
+
+def div2():
+	b=2
+	n=int(num2)
+	res = n % b
+	m=5
+	if(res==0):
+		m=True
+		print(m)
+	else:
+		m=False
+		print(m)
+	return 
+	
+def div3():
+	b=3
+	n=int(num3)
+	res = n % b
+	m=5
+	if(res==0):
+		m=True
+		print(m)
+	else:
+		m=False
+		print(m)
+	return 
+	
+def divs():
+	b=2
+	c=3
+	n=int(nums)
+	res = n % b
+	res1 = n % c
+	m=5
+	if(res==0 and res1==0):
+		m=True
+		print(m)
+	else:
+		m=False
+		print(m)
+	return 
+
+
+ 
+	
+esc_num()
+fecha()
+
+imc()
+area()
+div2()
+div3()
+divs()
