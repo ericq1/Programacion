@@ -1,0 +1,32 @@
+import datetime
+# Examen Parcial 
+# Eric Martin Calzadilla Quezada
+# A01560889
+
+radio = input("Ingrese el radio para calcular el Area de un circulo: ")
+m = input("Ingrese cualquier fecha (formato dd/mm/aaaa): ")
+actual = datetime.date.today()
+
+def area():
+	pi=3.1416
+	r=int(radio)
+	area=pi*r**2
+	print("El area del circulo es: ",area)
+	return 
+	
+def fecha():
+	c=datetime.datetime.strptime(m, "%d/%m/%Y")
+	k= datetime.date(c.year+10,c.month,c.day)
+	l = k.strftime("%B %d de %Y - %A")
+	print (l)
+	return 
+	
+def pc(): 
+	b="Le falta galleta a tu computadora :("
+	x="Tienes una super computadora :)"
+	print(x)
+	return
+	
+area()
+pc()
+fecha()
