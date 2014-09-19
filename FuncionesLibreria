@@ -1,1 +1,50 @@
- 
+import math 
+
+parnon1 = input("Ingrese un numero: ")
+
+letra = input("Escribe cualquier frase: ")
+
+base = input("Escribe la base del triangulo rectangulo: ")
+angulo = input("Escribe el angulo del triangulo rectangulo: ")
+
+def parnon():
+	n=int(parnon1)
+	p=n%2
+	z=9
+	if(p==0):
+		z=False
+		print(z)
+	else:
+		z=True
+		print(z)
+	return	
+
+def let():
+	print(letra.title())
+	return
+	
+def triangulo():
+	b=int(base)
+	a=int(angulo)
+	h= b * (math.tan(a))
+	t= h**2 + b**2
+	tn= (math.sqrt(t))
+	print("La distancia del lado contrario del triangulo es: ",tn)
+	return 
+
+def pc():
+	b="Le falta galleta a tu computadora :("
+	x="Tienes una super computadora :)"
+	print(x)
+	return
+
+def conv():
+	g=int(con)
+	print(g)
+	return
+
+parnon()
+let()
+triangulo()
+pc()
+conv()
